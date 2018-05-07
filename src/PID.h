@@ -12,7 +12,8 @@ class PID {
       double kd,
       double target,
       double min_correction,
-      double max_correction);
+      double max_correction,
+      double integral_decay);
 
  /*
   * Report observation.
@@ -35,6 +36,7 @@ class PID {
   double correction_;
   double min_correction_;
   double max_correction_;
+  double integral_decay_;
 };
 
 #endif /* PID_H */
